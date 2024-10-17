@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        /* Hide sections by default using your class names */
+.wish-container-off,
+.more-wishes-off,
+.slideshow-container {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="surprise-message">Surprise!</h1>
+        <img src="/img/baloone2.jpg" alt="Balloons" class="balloons" />
+        
+        <div class="wish-container">
+            <h2 class="wish-message">Happy Birthday, [Name]! 🎉🎂</h2>
+            <p class="wish-text">Wishing you a day filled with happiness and a year filled with joy! Enjoy your special day to the fullest!</p>
+            <button class="show-more-btn">Show More Wishes</button>
+        </div>
+
+        <div class="more-wishes">
+            <p>You're amazing in every way, hope this year brings everything you dream of!</p>
+            <img src="/img/cake.jpg" alt="Birthday Cake" class="cake" />
+            <p class="closing-wish">Keep smiling and have a fabulous day ahead! 🥳</p>
+        </div>
+        
+        <audio id="birthday-song" src="/img/sample-12s.mp3" preload="auto"></audio>
+        
+        <div class="slideshow-container">
+            <h2>Memories of You!</h2>
+            <div class="slideshow">
+                <div class="slides fade">
+                    <img src="/img/pic1.jpg" alt="pic1">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/pic2.jpg" alt="pic2">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/pic3.jpg" alt="pic3">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/pic4.jpg" alt="pic4">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/pic5.jpg" alt="pic5">
+                </div>
+                <div class="slides fade">
+                    <img src="/img/pic6.jpg" alt="pic6">
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        
+        <button id="toggleSlideshow" class="slideshow-btn">Pause</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

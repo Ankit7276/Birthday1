@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffebcd;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.surprise-message {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff4500;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.balloons {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    animation: float 5s infinite;
+}
+
+.wish-container {
+    background-color: rgba(255, 182, 193, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wish-message {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    animation: textGlow 1.5s infinite;
+}
+
+.wish-text {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #800080;
+}
+
+.show-more-btn {
+    background-color: #ffa07a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.show-more-btn:hover {
+    background-color: #ff6347;
+}
+
+.more-wishes {
+    margin-top: 20px;
+    animation: fadeInUp 1.5s;
+}
+
+.cake {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    animation: bounce 2s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px #ff1493; }
+    50% { text-shadow: 0 0 20px #ff69b4; }
+    100% { text-shadow: 0 0 10px #ff1493; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+    
+
+/* All previous styles remain the same */
+
+/* Maintain same image size in the slideshow */
+.slideshow-container img {
+    width: 100%;
+    height: 500px; /* Adjust this based on your need */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 10px;
+}
+
+/* Position for the control buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.slideshow-btn {
+    background-color: #ffa07a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.slideshow-btn:hover {
+    background-color: #ff6347;
+}
+
+/* Animations */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+
+/* Hide elements with 'hidden' class */
+/* .hidden {
+    display: none;
+} */
